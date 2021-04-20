@@ -36,7 +36,7 @@ if [ $? -eq 0 ];
         read input
          if [ "${input^^}" == "${is_running^^}" ];
             then
-            id=$(ps cax | grep mysql | grep -o '^[0-9]*')
+            id=$(ps cax | grep mysql | grep -o '^[ ]*[0-9]*')
             echo $id && kill $id
             echo "Process "$id "has been killed successfully. Proceeding towards the installation"
             else
