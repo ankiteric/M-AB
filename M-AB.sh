@@ -1,5 +1,6 @@
 #!/bin/bash
 
+### written by Ankit Kapoor ####
 ### This script will install the mysqld from the binary files.User can download the binary files
 ### from the mysql official website. Only condition for this script to work is that the tar or zipped file should be untar and the folder should be in a place.
 ### This script will start from creating the group and user and if already exist will skip to the next path where it will create the data directory,log directory 
