@@ -32,13 +32,22 @@ ps cax | grep mysql > /dev/null
 if [ $? -eq 0 ];
   then
   echo "mysqld is already running."
-  echo "Do you want to kill this process and re install database"
+  echo "Do you want to kill this process and re-install database"
         read input
          if [ "${input^^}" == "${is_running^^}" ];
             then
             id=$(ps cax | grep mysql | grep -o '^[ ]*[0-9]*')
             echo $id && kill $id
-            echo "Process "$id "has been killed successfully. Proceeding towards the installation"
+            result=$?
+              if [ "$result" = 0 ];
+                 then
+                 echo "mysqld process has been killed successfully"
+                 else
+                 echo "cannot kill, please kill manually and re-run this script"
+                 echo "exiting program"
+                 exit 1
+               fi
+            echo "Proceeding towards the installation"
             else
             echo "exiting this programm"
             exit 1
