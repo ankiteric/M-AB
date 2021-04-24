@@ -11,7 +11,7 @@
 #permission to link the program and your derivative works with the
 #separately licensed software that they have included with M-AB.
 
-
+### Written by Ankit Kapoor
 
 
 #!/bin/bash
