@@ -7,3 +7,8 @@ MySQL automatic binary installation. Usually, to make our life easy while instal
 # Limitations and future road map
 
 However there are few limitaions which comes with M-AB. Currently it doesn't update the root user very first time on its own which is in future road map to implement. Additonally at the present moment, the configuration file contains only data directory and log directory but in future road map more parameters while installing can be introduced. User should remember that in order for M-AB to work properly mysql binary files should already be downloaded and must be untared without which it will fail.
+
+
+# Things to take care of while using this tool :
+
+Make ensure that you use absolute path instead of relative path when passing data directory and log directory. Absolute path is the one which starts from root i.e. the complete path. For example "/var/data01/mysql" is an absolute path if mysql is your data dorectory. It doesn't make any sense to install database in the directory where this script has been located. Hence it is safe to pass asolute path.
