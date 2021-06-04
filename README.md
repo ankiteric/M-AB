@@ -16,6 +16,6 @@ Make ensure that you use absolute path instead of relative path when passing dat
 
 Person who are looking in this are :
 
-Ankit Kapoor (ankiteric)
+1. Ankit Kapoor (ankiteric)
 
-Gilles Gravier (gravax)
+2. Gilles Gravier (gravax)
