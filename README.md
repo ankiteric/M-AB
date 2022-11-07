@@ -9,6 +9,8 @@ Purpose of MySQL automatic binary installation is to enable automatic installati
 
 However there are few limitaions which comes with M-AB. Currently it doesn't update the mysql root user very first time on its own which is in future road map to implement. Additonally at the present moment, the configuration file contains only data directory and log directory but in future more parameters while installing can be introduced. User should remember that in order for M-AB to work properly, mysql binary files should already be downloaded and must be untared without which it will fail.
 
+Currently it supports only linux (no windows). For mac, some commands won't work which needs to be replace with equivalent command.
+
 
 # Things to take care of while using this tool 
 
